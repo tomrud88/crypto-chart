@@ -2,7 +2,7 @@
 import './App.css';
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
-import Coin from './Coin'
+import Coin from './Coin';
 
 
 function App(){
