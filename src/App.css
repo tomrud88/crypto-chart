@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+  background-color: black;
+  margin:0;
+  padding:0;
+  color:#fff; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    margin-top:50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-box{
+   margin-bottom: 70px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.coin-text{
+    font-size:30px;
+    text-align: center;
+    width:100vh;
+}
+.search-input{
+    width:250px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border:none;
+    background-image: linear-gradient(-225deg,#ac32e4 0%,#7918f2 48%,#4801ff);
+    color:#e2e2e2;
+    padding-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-input::placeholder{
+    color:#e2e2e2;
+}
+.panel{
+  position:relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
+  height: 500px;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.bar{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width:900px;
+    height: 50px;
+    background-color: hsl(0,5%,10%);
+    align-items: center;
+    position:absolute;
+    overflow: hidden;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 1001;
+    will-change: transform;
+    transform: translateX(0px) translateY(0px);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-bar{
+    width: 220px;
+}
+.coins{
+    margin-top:50px;
 }
